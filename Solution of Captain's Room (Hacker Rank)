@@ -1,0 +1,6 @@
+from collections import Counter
+d={}
+k=int(input())
+l=list(map(int,input().split()))
+d=dict(Counter(l))
+print(min(d,key=d.get))
